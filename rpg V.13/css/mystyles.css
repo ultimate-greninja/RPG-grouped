@@ -1,0 +1,8 @@
+body{
+    background-color: rgb(50, 50, 50);
+    color: white;
+}
+#deadText{
+    background-color: linear-gradient(crimson,red,white);
+    color: black;
+}

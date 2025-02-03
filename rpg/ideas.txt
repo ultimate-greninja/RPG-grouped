@@ -1,0 +1,153 @@
+Common: Gray, rgb(211, 211, 211)  
+Uncommon: Green, rgb(148, 217, 25)  
+Rare: Blue, rgb(9, 172, 251)  
+Epic: Purple, rgb(116, 14, 206)  
+Legendary: Gold, rgb(254, 212, 45)  
+Mythical: Violet, rgb(127, 0, 255)  
+Cosmic: Dark Blue, rgb(1, 69, 178)  
+Universal: Deep Teal, rgb(23, 133, 134)  
+Divine: Alice White, rgb(194, 206, 210)  
+Celestial: Indigo, rgb(51, 0, 153)  
+Transcendent: Medium Spring Green, rgb(0, 255, 192)
+Reality: Crimson, rgb(180, 0, 0)
+
+backfire(lose health = to 1/20 of weapon power) = 1/20
+
+attack speed = 1
+
+weapon pull cost = lv. * No.pulled
+
+enemy health = rand ((exp/lv.) to exp)
+
+enemy gold drop = enemy health / 5
+
+weapon durability = current lv.(when got) * 20
+
+weapon damage = rand(lv. to (4*lv.(when got)))
+
+health = current lv.* current lv. *50 
+
+base weapon power = exp / current lv.(when got)
+
+gold per swing = weapon power / 100 (least 1)
+
+base sell price = base weapon power + base weapon durability /10
+
+exp = exp + weapon power/10(least 1) per swing
+
+exp
+lv.1 = 10 exp
+lv.2 = lv.1*2
+lv.3 = lv.2*2
+lv.4 = lv.3*2
+lv.5 = lv.4*2
+lv.6 = lv.5*3
+lv.7 = lv.6*3
+lv.8 = lv.7*4
+lv.9 = lv.8*4
+lv.10 = lv.9*5
+etc.
+max lv. = lv.1500
+
+war hammer(weapon power *2, attack speed *1/2) = 2/10
+sword(weapon power *1, attack speed *1) = 2/10 
+daggers(weapon power *1/2, attack speed *2) = 2/10
+claymore(weapon power *3, attack speed *1/3) = 2/10
+wand(weapon power *1/4, attack speed *1, garenteed special effect) = 2/10
+
+common = 1/4
+uncommon = 1/8
+rare = 1/16
+epic = 1/32
+legendary = 1/64
+mythical = 1/128
+cosmic = 1/256
+universal = 1/512
+divine = 1/1024
+celestial = 1/2048
+transendant = 1/4096
+reality = 1/8192
+coins = 1/8192(1/4 of coin spent)
+
+common = base weapon power*1
+uncommon = base weapon power*2
+rare = base weapon power*3
+epic = base weapon power*4
+legendary = base weapon power*5
+mythical = base weapon power*6
+cosmic = base weapon power*7
+universal = base weapon power*8
+divine = base weapon power*9
+celestial = base weapon power*10
+transendant = base weapon power*11
+reality = base weapon power*12
+
+common = base weapon durability*1
+uncommon = base weapon durability*2
+rare = base weapon durability*3
+epic = base weapon durability*4
+legendary = base weapon durability*5
+mythical = base weapon durability*6
+cosmic = base weapon durability*7
+universal = base weapon durability*8
+divine = base weapon durability*9
+celestial = base weapon durability*10
+transendant = base weapon durability*11
+reality = base weapon durability*12
+
+weapon sell price
+common = base sell price *1
+uncommon = base sell price *2
+rare = base sell price *3
+epic = base sell price *4
+legendary = base sell price *5
+mythical = base sell price *6
+cosmic = base sell price *7
+universal = base sell price *8
+divine = base sell price *9
+celestial = base sell price *10
+transendant = base sell price *11
+reality = base sell price *12
+
+UPGARDE COST
+common = base weapon power 
+uncommon = base weapon power *2
+rare = base weapon power *4
+epic = base weapon power *8
+legendary = base weapon power *16
+mythical = base weapon power *32
+cosmic = base weapon power *64
+universal = base weapon power *128
+divine = base weapon power *256
+celestial = base weapon power *512
+transendant = base weapon power *1024
+reality = base weapon power *2048
+
+rare+ special effects 1/20
+godly (only divine+)(1/64 chance base weapon power * 1,000,000)= 1/100
+burn =1/20
+poison(slow damage 2*lv. per 10 sec for 3 min) = 1/20
+decay(slow damage 3*lv. per 10 sec for 3 min) = 1/30
+lifesteal(1/10 of damage healed) = 1/25
+golden(only legendary+)(double money) = 1/20
+shock(bonus hit but 1/4 weapon power) = 1/50
+healer(divine+)(does no damage but heals the damage)
+
+legendary+ curse 1/10
+none = 1/4
+binding(cannot sell and is always equiped after the first time)=1/4
+money eater (halfs money you get per swing) = 1/16
+wither(in inventory take 1 damage per use) = 1/16
+weak(1/4 of durability) = 1/4
+unworthy(cannot use until certain level always until worthy) = {
+    legendary = lv.25
+    mythical = lv.50
+    cosmic = lv.100
+    universal = lv.150
+    divine = lv.250
+    celestial = lv.500
+    transendant = lv.750
+    reality = lv.1000
+}
+maddness(divine+)(every minute partly blinded by red screen when equiped but 2* weapon power) = 1/10
+slowness( 1/2 attack speed) = 1/10

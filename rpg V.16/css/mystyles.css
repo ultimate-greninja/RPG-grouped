@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(50, 50, 50);
+    color: white;
+}
+#deadText{
+    background-color: linear-gradient(crimson,red,white);
+    color: black;
+}
+#all{
+    background-image: url('img/town.jfif');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+#boxes{
+    background-color: rgb(50, 50, 50);
+    position: absolute;
+    top: 65%;
+    left: 5%;
+    right: 5%;
+    border: 50px solid rgb(50, 50, 50);
+}
+#button{
+    width: 100%;
+}

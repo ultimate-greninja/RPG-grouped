@@ -1,0 +1,8 @@
+enemy created 3 times at once
+enemy health bar bugging out
+weapon inventory page movement not going past page 2
+weapon durability not updated
+data is not got from the database if the cookie doesnt exist (exeption should be user id)
+a new enemy is generated every time / old enemy isnt used if not defeated in one blow because of this the attack never happens
+general placement of items in weapon inventory not how they should be
+attacks have no cool down do to reloading maybe have a cookie that acts as a timer

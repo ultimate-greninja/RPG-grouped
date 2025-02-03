@@ -1,0 +1,55 @@
+Common: Gray, rgb(211, 211, 211)  
+Uncommon: Green, rgb(148, 217, 25)  
+Rare: Blue, rgb(9, 172, 251)  
+Epic: Purple, rgb(116, 14, 206)  
+Legendary: Gold, rgb(254, 212, 45)  
+Mythical: Violet, rgb(127, 0, 255)  
+Cosmic: Dark Blue, rgb(1, 69, 178)  
+Universal: Deep Teal, rgb(23, 133, 134)  
+Divine: Alice White, rgb(194, 206, 210)  
+Celestial: Indigo, rgb(51, 0, 153)  
+Transcendent: Medium Spring Green, rgb(0, 255, 192)
+Reality: Crimson, rgb(180, 0, 0)
+colours are a suggestion
+
+one of each rarity{
+dagger
+sword
+claymore(big sword)
+scythe
+wand
+}
+
+goblin
+goblin chief
+
+orcs
+orc warlord
+
+kobold
+kobold shaman
+
+undead
+lich
+
+gnoll
+gnoll chieftain
+
+dark elf
+dark elf high priest
+dark elf high priestess
+
+hobgoblin
+hobgoblin warlord
+
+demon
+demon overlord
+
+troll
+troll king
+
+dragon
+ancient dragon
+
+a basic character
+clothes for it(don't know about this yet)

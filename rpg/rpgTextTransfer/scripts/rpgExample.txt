@@ -1,0 +1,6 @@
+function transfer(){
+    let stats = document.querySelector("#data")
+    stats = stats.innerHTML
+    console.log(stats)
+    return stats
+}

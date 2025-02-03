@@ -1,0 +1,361 @@
+body{
+    background-color: rgb(50, 50, 50);
+}
+#deadText{/* change because different way of dying */
+    position: absolute;
+    background-color: linear-gradient(crimson,red,red,white);
+    color: black;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+}
+#all{
+    position: absolute;
+    background-color: white;
+    z-index: -2;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    
+}
+#town_img{
+    position: absolute;
+    z-index: -1;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+}
+#boxes{
+    background-color: rgb(50, 50, 50);
+    position: absolute;
+    top: 65%;
+    left: 5%;
+    right: 5%;
+    bottom: 2%;
+    border: 50px solid rgb(50, 50, 50);
+    border-radius: 20px;
+}
+#button{
+    width: 100%;
+}
+#title{
+    color: white;
+    position: absolute;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(50, 50, 50);
+    border-radius: 150px 150px 0px 0px;
+    top: 62%;
+    left: 20%;
+    right: 20%;
+    z-index: 1;
+}
+#male_avatar,#male_gender_button,#male_avatar_title{
+    background-color: lightblue;
+    transition: .5s;
+}
+#female_avatar,#female_gender_button,#female_avatar_title{
+    background-color: pink;
+    transition: .5s;   
+}
+#female_avatar,#female_gender_button{
+    position: absolute;
+    border-radius: 90px;
+    right: 30%;
+    top: 20%;
+}
+#male_avatar,#male_gender_button{
+    position: absolute;
+    border-radius: 90px;
+    left: 30%;
+    top: 20%;
+}
+#female_gender_button{
+    position: absolute;
+    right: 34%;
+    top: 25%;
+}
+#male_gender_button{
+    position: absolute;
+    left: 34%;
+    top: 25%;
+}
+#male_avatar:hover,#male_avatar:active{
+    background-color: rgb(133,176,190);
+    transition: .5s;
+}
+#female_avatar:hover,#female_avatar:active{
+    background-color: rgb(215,152,163);
+    transition: .5s;
+}
+#male{
+    position: absolute;
+    left: 30%;
+    top: 20%;
+}
+#female{
+    position: absolute;
+    right: 30%;
+    top: 20%;
+}
+#backButton{
+    position: absolute;
+    bottom: 3.5%;
+    left: 10%;
+    right: 10%;
+}
+#textChange{
+    color: white;
+}
+#genderless{
+    background-color: #20e680;
+    border-radius: 90px;
+    transition: .5s;   
+}
+#female_avatar_title,#male_avatar_title,#genderless{
+    border-radius: 60px;
+    left: 20%;
+}
+#home,#character,#forging,#inventory,#logOut{
+    position: absolute;
+    font-size: 150%;
+    top: 38%;   
+}
+#footer_text{
+    text-align: center;
+    width: 100%;
+    font-size: 200%;
+    color: white;
+}
+#home{
+    left: 21.5%;
+}
+#character{
+    left: 32.5%;
+}
+#forging{
+    left:47.5%;
+}
+#inventory{
+    left: 60%;
+}
+#logOut{
+    left: 77.5%;
+}
+#enemyHealthBar,#health{
+    position: sticky;
+    /* background-color: #dc3545; */
+    border-radius: 50px;
+    border: solid black 3px;
+    color: black;
+    font-size: 25px;
+    text-align: center;
+}
+#enemyHealthBar{
+    width: 25%;
+    height: 50px;
+    left: 70%;
+    top: 25%;
+    bottom: 75%;
+}
+#health{
+    top: 82%;
+    left: 2%;
+    right: 2%;
+    width: 96.5%;
+    height: 40px;
+}
+/* here currently */
+#enemyImg{
+    position: sticky;
+    width: 25%;
+    height: 50%;
+    left: 70%;
+    top: 33%;
+}
+#buttons{
+    position: sticky;
+    top: 87%;
+    width: 100%;
+    text-align: center;
+    height: 30px;
+}
+#weaponRoll,#weaponRollButton{
+    position: sticky;
+    top: 87%;
+    left: 2%;
+    right: 77%;
+    width: 21.5%;
+    background-color: #20e680;
+    border: solid black 2px;
+}
+#armourRoll,#armourRollButton{
+    position: sticky;
+    top: 87%;
+    right: 2%;
+    left: 77%;
+    width: 21.5%;
+    background-color: #20e680;
+    border: solid black 2px;
+}
+#swing,#swingButton{
+    position: sticky;
+    top: 87%;
+    left: 27%;
+    right: 52%;
+    width: 21.5%;
+    background-color: #20e680;
+    border: solid black 2px;
+}
+#sell,#sellButton{
+    position: sticky;
+    top: 87%;
+    right: 26%;
+    left: 52%;
+    width: 21.5%;
+    background-color: #20e680;
+    border: solid black 2px;
+}
+#weaponRoll,#weaponRollButton,#armourRoll,#armourRollButton,#swing,#swingButton,#sell,#sellButton{
+    border-radius: 10px;
+}
+#sellButton,#swingButton,#armourRollButton,#weaponRollButton{
+    width: 100%;
+    background-color: #20e680;
+    top: 0%;
+}
+
+#one,#two,#three,#four,#five,#six,#seven,#eight,#nine,#ten,#eleven,#twelve,#thirteen,#fourteen,#fifteen,#sixteen,#seventeen,#eighteen,#nineteen,#twenty,#twentyone{
+    position: absolute;
+    text-align:center;
+}
+#one,#four,#seven,#ten,#thirteen,#sixteen,#nineteen{
+    left: 3%;
+    right: 74%;
+    width: 27%;
+}
+#two,#five,#eight,#eleven,#fourteen,#seventeen,#twenty{
+    left: 36%;
+    right: 35%;
+    width: 27%;
+}
+#three,#six,#nine,#twelve,#fifteen,#eighteen,#twentyone{
+    right:4%;
+    left: 69%;
+    width: 27%;
+}
+#one,#two,#three{
+    top: 22%;
+}
+#four,#five,#six{
+    top: 94%;
+}
+#seven,#eight,#nine{
+    top: 166%;
+}
+#ten,#eleven,#twelve{
+    top: 238%;
+}
+#thirteen,#fourteen,#fifteen{
+    top: 310%;
+}
+#sixteen,#seventeen,#eighteen{
+    top: 382%;
+}
+#nineteen,#twenty,#twentyone{
+    top: 454%;
+}
+#equip{
+    width: 50%;
+    height: 30px;
+    border-radius: 90px;
+}
+/* 7 Center */
+#forward,#forwardCenter{
+    position: absolute;
+    top: auto;
+    height: 100%;
+    border-radius: 45px;
+}
+#forward{
+    right: 35%;
+    left: 55%; 
+}
+#backward,#backwardCenter{
+    position: absolute;
+    top:auto;
+    height: 100%;
+    border-radius: 45px;
+    right: 55%;
+    left: 35%;
+}
+#backward{
+    right: 55%;
+    left: 35%;
+}
+#backwardCenter,#forwardCenter{
+    right: 40%;
+    left: 40%;
+}
+#traversalButtons,#traversalButtonsOne,#traversalButtonsTwo,#traversalButtonsThree,#traversalButtonsFour,#traversalButtonsFive,#traversalButtonsSix,#traversalButtonsSeven{
+    position: absolute;
+    width: 100%;
+    height: 5%;
+}
+#traversalButtonsOne{
+    top:95%;
+}
+#traversalButtonsTwo{
+    top:167%;
+}
+#traversalButtonsThree{
+    top:239%;
+}
+#traversalButtonsFour{
+    top:311%;
+}
+#traversalButtonsFive{
+    top:382%;
+}
+#traversalButtonsSix{
+    top:433%;
+}
+#traversalButtonsSeven{
+    top:499%;
+}
+a{
+    color: #20e680;
+}
+a:hover{
+    color: #19ac60;
+}
+a:active{
+    color: #157e47;
+}
+#basicFooter{
+    position:absolute;
+    bottom: 0%;
+    width: 100%;
+    z-index: 1;
+}
+#navbar{
+    position: sticky;
+    top: 0%;
+    width: 100%;  
+    z-index: 1;
+}
+#coin{
+    position:absolute;
+    height: 100px;
+    width: 80px;
+    left: 11%;
+    text-align: center;   
+}
+#goldCoin{
+    height: 80%;
+    width: 100%;
+}

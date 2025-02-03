@@ -1,0 +1,427 @@
+Common: Gray, rgb(211, 211, 211)  
+Uncommon: Green, rgb(148, 217, 25)  
+Rare: Blue, rgb(9, 172, 251)  
+Epic: Purple, rgb(116, 14, 206)  
+Legendary: Gold, rgb(254, 212, 45)  
+Mythical: Violet, rgb(127, 0, 255)  
+Cosmic: Dark Blue, rgb(1, 69, 178)  
+Universal: Deep Teal, rgb(23, 133, 134)  
+Divine: Alice White, rgb(194, 206, 210)  
+Celestial: Indigo, rgb(51, 0, 153)  
+Transcendent: Medium Spring Green, rgb(0, 255, 192)
+Reality: Crimson, rgb(180, 0, 0)
+
+backfire(lose health = to 1/20 of weapon power) = 1/20
+
+attack speed = 10 how many attacks can be done in 5 sec
+
+weapon pull cost = lv. * No.pulled
+
+enemy health = rand ((exp) to exp*lv.)
+
+enemy gold drop = enemy max health  / 5
+
+base weapon durability = current lv.(when got) * 20
+
+weapon damage = rand(weapon power /5 to (weapon power /2))
+
+health = 50 + current lv.* current lv. *50 
+
+base weapon power = exp / (current lv.(when got)/2)
+
+gold per swing = weapon power / 100 (least 1)
+
+base sell price = base weapon power + base weapon durability /10
+
+exp = exp + weapon power/100(least 1) per swing
+
+exp
+lv.1 = 10 exp
+lv.2 = lv.1*2
+lv.3 = lv.2*2
+lv.4 = lv.3*2
+lv.5 = lv.4*2
+lv.6 = lv.5*3
+lv.7 = lv.6*3
+lv.8 = lv.7*4
+lv.9 = lv.8*4
+lv.10 = lv.9*5
+etc.
+max lv. = lv.1500
+
+war hammer(weapon power *2, attack speed *1/2) = 2/10
+sword(weapon power *1, attack speed *1) = 2/10 
+daggers(weapon power *1/2, attack speed *2) = 2/10
+claymore(weapon power *3, attack speed *1/3) = 2/10
+wand(weapon power *1/4, attack speed *1, garenteed special effect) = 2/10
+
+common = 1/4
+uncommon = 1/8
+rare = 1/16
+epic = 1/32
+legendary = 1/64
+mythical = 1/128
+cosmic = 1/256
+universal = 1/512
+divine = 1/1024
+celestial = 1/2048
+transendant = 1/4096
+reality = 1/8192
+coins = 1/8192(1/4 of coin spent)
+
+common = base weapon power*1
+uncommon = base weapon power*2
+rare = base weapon power*3
+epic = base weapon power*4
+legendary = base weapon power*5
+mythical = base weapon power*6
+cosmic = base weapon power*7
+universal = base weapon power*8
+divine = base weapon power*9
+celestial = base weapon power*10
+transendant = base weapon power*11
+reality = base weapon power*12
+
+common = base weapon durability*1
+uncommon = base weapon durability*2
+rare = base weapon durability*3
+epic = base weapon durability*4
+legendary = base weapon durability*5
+mythical = base weapon durability*6
+cosmic = base weapon durability*7
+universal = base weapon durability*8
+divine = base weapon durability*9
+celestial = base weapon durability*10
+transendant = base weapon durability*11
+reality = base weapon durability*12
+
+armour same for durability
+
+base armour durability = Math.ceil(Math.random()*10) + health / 10
+
+armour damage = 1/4 enemy attack(not reduced by armour)
+
+armour blocking capabitity;
+common = 1/12 of 10 * userLv
+uncommon = 2/12 of 10 * userLv
+rare = 3/12 of 10 * userLv
+epic = 4/12 of 10 * userLv
+legendary = 5/12 of 10 * userLv
+mythical = 6/12 of 10 * userLv
+cosmic = 7/12 of 10 * userLv
+universal = 8/12 of 10 * userLv
+divine = 9/12 of 10 * userLv
+celestial = 10/12 of 10 * userLv
+transendant = 11/12 of 10 * userLv
+reality = 12/12 of 10 * userLv
+
+repair
+health left on weapon / armour (% carries bellow until another percentage or 0)
+99%: 1 ore of rarity and 1% of sell price
+98%: 2 ore of rarity and 2% of sell price
+96%: 3 ore of rarity and 3% of sell price
+94%: 4 ore of rarity and 4% of sell price
+92%: 5 ore of rarity and 5% of sell price
+90%: 6 ore of rarity and 6% of sell price
+88%: 7 ore of rarity and 7% of sell price
+86%: 8 ore of rarity and 8% of sell price
+84%: 9 ore of rarity and 9% of sell price
+82%: 10 ore of rarity and 10% of sell price
+80%: 11 ore of rarity and 1% of sell price
+78%: 12 ore of rarity and 2% of sell price
+76%: 13 ore of rarity and 3% of sell price
+74%: 14 ore of rarity and 4% of sell price
+72%: 15 ore of rarity and 5% of sell price
+70%: 16 ore of rarity and 6% of sell price
+68%: 17 ore of rarity and 7% of sell price
+66%: 18 ore of rarity and 8% of sell price
+64%: 19 ore of rarity and 9% of sell price
+62%: 20 ore of rarity and 20% of sell price
+60%: 21 ore of rarity and 21% of sell price
+58%: 22 ore of rarity and 22% of sell price
+56%: 23 ore of rarity and 23% of sell price
+54%: 24 ore of rarity and 24% of sell price
+52%: 25 ore of rarity and 25% of sell price
+50%: 26 ore of rarity and 26% of sell price
+48%: 27 ore of rarity and 27% of sell price
+46%: 28 ore of rarity and 28% of sell price
+44%: 29 ore of rarity and 29% of sell price
+42%: 30 ore of rarity and 20% of sell price
+40%: 31 ore of rarity and 31% of sell price
+38%: 32 ore of rarity and 32% of sell price
+36%: 33 ore of rarity and 33% of sell price
+34%: 34 ore of rarity and 34% of sell price
+32%: 35 ore of rarity and 35% of sell price
+30%: 36 ore of rarity and 36% of sell price
+28%: 37 ore of rarity and 37% of sell price
+26%: 38 ore of rarity and 38% of sell price
+24%: 39 ore of rarity and 39% of sell price
+22%: 40 ore of rarity and 40% of sell price
+20%: 41 ore of rarity and 41% of sell price
+18%: 42 ore of rarity and 42% of sell price
+16%: 43 ore of rarity and 43% of sell price
+14%: 44 ore of rarity and 44% of sell price
+12%: 45 ore of rarity and 45% of sell price
+10%: 46 ore of rarity and 46% of sell price
+8%: 47 ore of rarity and 47% of sell price
+6%: 48 ore of rarity and 48% of sell price
+4%: 49 ore of rarity and 49% of sell price
+2%: 50 ore of rarity and 50% of sell price
+
+Common: Ironite
+Uncommon: Steelite
+Rare: Silverium
+Epic: Goldforge
+Legendary: Platinum
+Mythical: Mythril
+Cosmic: Stardustium
+Universal: Etherium
+Divine: Celestium
+Celestial: Astralium
+Transcendent: Omniite
+Reality: Numinite
+
+drops 
+Common: Ironite 1/4 0.25 25% 2048/8192 2048
+Uncommon: Steelite 1/8 0.125 12.5% 1024/8192 3072
+Rare: Silverium 1/16 0.0625 6.25% 512/8192 3584
+Epic: Goldforge 1/32 0.03125 3.125% 256/8192 3840
+Legendary: Platinumium 1/64 0.015625 1.5625% 128/8192 3968
+Mythical: Mythrilith 1/128 0.0078125 0.78125% 64/8192 4032
+Cosmic: Stardustium 1/256 0.00390625 0.390625% 32/8192 4064
+Universal: Etherium 1/512 0.001953125 0.1953125% 16/8192 4080
+Divine: Celestium 1/1024 0.0009765625 0.09765625% 8/8192 4088
+Celestial: Astralium 1/2048 0.00048828125 0.048828125% 4/8192 4092
+Transcendent: Omniite 1/4096 0.000244140625 0.0244140625% 2/8192 4094
+Reality: Numinite 1/8192 0.0001220703125 0.01220703125% 1/8192 4095
+
+can try and forge with 100 of a material
+
+forge
+when forge the items used to for is the rarity
+
++0.1% per forge success
++0.01% per forge fail
+
+Common: Iron 10%
+Uncommon: Steel 10%
+Rare: Silver 8%
+Epic: Gold 5%
+Legendary: Platinum 4%
+Mythical: Mythril 2%
+Cosmic: Stardust 1%
+Universal: Etherium 0.5%
+Divine: Celestium 0.1%
+Celestial: Astralium 0.05%
+Transcendent: Omniite 0.02%
+Reality: Numinite 0.01%
+
+for both armour and weapon
+
+weapon & armour sell price
+common = base sell price *1
+uncommon = base sell price *2
+rare = base sell price *3
+epic = base sell price *4
+legendary = base sell price *5
+mythical = base sell price *6
+cosmic = base sell price *7
+universal = base sell price *8
+divine = base sell price *9
+celestial = base sell price *10
+transendant = base sell price *11
+reality = base sell price *12
+
+UPGRADE COST
+common = weapon / armour sell price 
+uncommon = weapon / armour sell price * 1.1
+rare = weapon / armour sell price * 1.2
+epic = weapon / armour sell price * 1.3
+legendary = weapon / armour sell price * 1.4
+mythical = weapon / armour sell price * 1.5
+cosmic = weapon / armour sell price * 1.6
+universal = weapon / armour sell price * 1.7
+divine = weapon / armour sell price * 1.8
+celestial = weapon / armour sell price * 1.9
+transendant = weapon / armour sell price * 2
+reality = weapon / armour sell price * 2.1
+
+the upgrade increases item power by 1.1 and must be full durability.
+
+after upgrade price;
+common = weapon / armour sell price 
+uncommon = weapon / armour sell price * 1.1
+rare = weapon / armour sell price * 1.2
+epic = weapon / armour sell price * 1.3
+legendary = weapon / armour sell price * 1.4
+mythical = weapon / armour sell price * 1.5
+cosmic = weapon / armour sell price * 1.6
+universal = weapon / armour sell price * 1.7
+divine = weapon / armour sell price * 1.8
+celestial = weapon / armour sell price * 1.9
+transendant = weapon / armour sell price * 2
+reality = weapon / armour sell price * 2.1
+
+rare+ special effects 1/20
+godly (only divine+)(1/64 chance base weapon power * 1,000)= 1/100
+burn(fast damage weapon power / 144 per 3 sec for 1 min) = 1/10
+poison(slow damage weapon power / 48 per 10 sec for 3 min minimum damage per tick 1) = 1/20
+decay(slow damage weapon power / 24 per 10 sec for 3 min minimum damage per tick 1) = 1/30
+lifesteal(1/10 of damage, healed) = 1/25
+golden(only legendary+)(double money) = 1/20
+shock(bonus hit but 1/4 weapon power) = 1/50
+healer(divine+)(does no damage but heals the damage) = 1/25
+sturdy(1.5*durability) = rest of probability
+
+legendary+ curse 1/10
+dull(1/2 of weapon power) = 25%
+binding(cannot sell and is always equiped after the first time)= 25%
+money eater (halfs money you get when equiped) = 9%
+wither(in inventory take 1 damage per use) = 9%
+brittle(1/4 of durability) = 18%
+unworthy(cannot use until certain level always until worthy) = {
+    legendary = lv.25
+    mythical = lv.50
+    cosmic = lv.100
+    universal = lv.150
+    divine = lv.250
+    celestial = lv.500
+    transendant = lv.750
+    reality = lv.1000
+}
+maddness(divine+)(every minute partly blinded by red screen when equiped and take 5% health but 2* weapon power) = 7%
+glass cannon (1 hit kill 1 use)(universal-) = tied to maddness
+slowness( 1/2 attack speed) = 7%
+
+enemy race
+
+note: cannot burn again while burned etc.
+
+25%
+goblin{
+    basic 
+    no change to stats
+}{
+    (12.5%)
+    goblin chief{
+        1.5 * all stats but speed
+    }
+}
+
+15%
+orcs{
+    (7.5%)
+    1.5 * attack 
+    0.5 * speed
+}{
+    orc warlord{
+        2 * attack
+        0.5 * speed
+    }
+}
+
+15%
+kobold{
+    (7.5%)
+    1.5 * health
+    causes confusion (more chance of backfire to 1/10) 10%
+}{
+    kobold shaman{
+        1.5 * health
+        causes confusion 10% and shock 25%  
+    }
+}
+
+10%
+undead{
+    4 * health 
+    0.5 * attack
+    0.5 * speed
+}{
+    (5%)
+    lich{
+        4*health
+        base attack
+        base speed
+        causes decay 50%
+    }
+}
+
+10%
+gnoll{
+    2 * attack
+    2 * speed
+}{
+    (5%)
+    gnoll chieftain{
+        4 * attack
+        4 * speed
+    }
+}
+
+10%
+dark elf{
+    2 * all stats but speed
+    causes decay 75%
+}{
+    (5%)
+    dark elf high priest / priestess (50%)
+    3 * all stats but speed *1.5
+    causes decay 90%
+}
+
+5%
+hobgoblin{
+    1.5 * all stats but speed
+}{
+    (2.5%)
+    hobgoblin warlord{
+        2 * all stats but speed
+    }
+}
+
+5%
+demon{
+    1.5 * all stats but speed
+    inflict burn 80%
+}{
+    (2.5%)
+    demon overlord{
+        2.5 * all stats but speed
+        inflict burn 100%
+    }
+}
+
+3%
+trolls{
+    4 * health
+    2 * attack
+    0.25 * speed
+    has lifesteal 100%
+}{
+    (1.5%)
+    troll king{
+        6 * health
+        3 * attack
+        0.25 * speed
+        has lifesteal 100%
+    }
+}
+
+2%
+dragons{
+    5 * all stats but speed
+    causes burn that does 2 * more than other burns 90%
+}{
+    (1%)
+    ancient dragon{
+        10 * all stats but speed 
+        causes burn that does 2 * more than other burns 90%
+    }
+}
+
+enemy attack speed = base is 10
+enemy attack  = base is 25
+enemy health = base is 100 
+can increase at a certain level e.g lv. 100 it can be 10*
+

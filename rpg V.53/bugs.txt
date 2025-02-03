@@ -1,0 +1,11 @@
+enemy created 3 times at once
+enemy health bar bugging out
+weapon inventory page movement not going past page 2
+weapon durability not updated
+a new enemy is generated every time / old enemy isn't used if not defeated in one blow because of this the attack never happens
+general placement of items in weapon inventory not how they should be
+attacks have no cool down do to reloading maybe have a cookie that acts as a timer
+enemy shared (shouldn't be)
+enemy not attacking maybe???
+the footer
+look of the game

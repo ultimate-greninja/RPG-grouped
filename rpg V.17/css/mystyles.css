@@ -1,0 +1,83 @@
+body{
+    background-color: rgb(50, 50, 50);
+    color: white;
+}
+#deadText{
+    background-color: linear-gradient(crimson,red,white);
+    color: black;
+}
+#all{
+    position: absolute;
+    background-color: white;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    
+}
+#town_img{
+    width: 100%;
+    height: 100%;
+}
+#boxes{
+    background-color: rgb(50, 50, 50);
+    position: absolute;
+    top: 65%;
+    left: 5%;
+    right: 5%;
+    border: 50px solid rgb(50, 50, 50);
+    border-radius: 20px;
+}
+#button{
+    width: 100%;
+}
+#title{
+    position: absolute;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(50, 50, 50);
+    border-radius: 100px 100px 0px 0px;
+    top: 60%;
+    left: 20%;
+    right: 20%;
+}
+#male_avatar{
+    position: absolute;
+    left: 30%;
+    top: 20%;
+    background-color: lightblue;
+    border-radius: 90px;
+    transition: .5s;
+}
+#female_avatar{
+    position: absolute;
+    right: 30%;
+    top: 20%;
+    background-color: pink;
+    border-radius: 90px;
+    transition: .5s;
+    
+}
+#male_avatar:hover{
+    background-color: rgb(133,176,190);
+    transition: .5s;
+}
+#female_avatar:hover{
+    background-color: rgb(215,152,163);
+    transition: .5s;
+}
+#gender_button{
+    position: absolute;
+    background-color: transparent;
+    border-color: transparent;
+}
+#male{
+    position: absolute;
+    left: 30%;
+    top: 20%;
+}
+#female{
+    position: absolute;
+    right: 30%;
+    top: 20%;
+}

@@ -1,0 +1,138 @@
+body{
+    background-color: rgb(50, 50, 50);
+}
+#deadText{
+    position: absolute;
+    background-color: linear-gradient(crimson,red,red,white);
+    color: black;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+}
+#all{
+    position: absolute;
+    background-color: white;
+    z-index: -2;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    
+}
+#town_img{
+    position: absolute;
+    z-index: -1;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+}
+#boxes{
+    background-color: rgb(50, 50, 50);
+    position: absolute;
+    top: 65%;
+    left: 5%;
+    right: 5%;
+    bottom: 2%;
+    border: 50px solid rgb(50, 50, 50);
+    border-radius: 20px;
+}
+#button{
+    width: 100%;
+}
+#title{
+    color: white;
+    position: absolute;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(50, 50, 50);
+    border-radius: 150px 150px 0px 0px;
+    top: 62%;
+    left: 20%;
+    right: 20%;
+    z-index: 1;
+}
+#male_avatar,#male_gender_button,#male_avatar_title{
+    background-color: lightblue;
+    border-radius: 90px;
+    transition: .5s;
+}
+#female_avatar,#female_gender_button,#female_avatar_title{
+    background-color: pink;
+    border-radius: 90px;
+    transition: .5s;   
+}
+#female_avatar,#female_gender_button{
+    position: absolute;
+    right: 30%;
+    top: 20%;
+}
+#male_avatar,#male_gender_button{
+    position: absolute;
+    left: 30%;
+    top: 20%;
+}
+#female_gender_button{
+    position: absolute;
+    right: 34%;
+    top: 25%;
+}
+#male_gender_button{
+    position: absolute;
+    left: 34%;
+    top: 25%;
+}
+#male_avatar:hover,#male_avatar:active{
+    background-color: rgb(133,176,190);
+    transition: .5s;
+}
+#female_avatar:hover,#female_avatar:active{
+    background-color: rgb(215,152,163);
+    transition: .5s;
+}
+#male{
+    position: absolute;
+    left: 30%;
+    top: 20%;
+}
+#female{
+    position: absolute;
+    right: 30%;
+    top: 20%;
+}
+#backButton{
+    position: absolute;
+    bottom: 3.5%;
+    left: 10%;
+    right: 10%;
+}
+#textChange{
+    color: white;
+}
+#genderless{
+    background-color: #20e680;
+    border-radius: 90px;
+    transition: .5s;   
+}
+#home,#character,#forging,#inventory,#logOut{
+    position: absolute;
+    font-size: 150%;
+    top: 38%;   
+}
+#home{
+    left: 19.5%;
+}
+#character{
+    left: 32.5%;
+}
+#forging{
+    left:47.5%;
+}
+#inventory{
+    left: 60%;
+}
+#logOut{
+    left: 77.5%;
+}

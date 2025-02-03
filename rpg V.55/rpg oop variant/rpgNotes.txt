@@ -1,0 +1,142 @@
+### Setup and Utilities
+- Setup cookies:
+  - `setCookie(cname, cvalue, exdays)`:
+    - Creates a cookie with the given name, value, and expiration date.
+    - Done by setting `document.cookie` with the appropriate parameters.
+  - `getCookie(cname)`:
+    - Reads a cookie by splitting `document.cookie` and searching for the desired name.
+    - Returns the cookie value if found, otherwise returns an empty string.
+
+- Death Handling:
+  - `Death()`:
+    - Modifies the webpage's `<body>` to display "You Died."
+    - Resets player and enemy health by updating hidden DOM elements.
+
+---
+
+### Weapon Mechanics
+- Weapon Type Calculation:
+  - `weaponType(weaponPower, weaponDurability, itemSellPriceMultiplier)`:
+    - Randomly assigns a type (e.g., Scythe, Sword) based on a random number.
+    - Adjusts `weaponPower`, `attackSpeed`, `weaponDurability`, and multipliers accordingly.
+
+- Weapon Rarity Determination:
+  - `rarity(baseWeaponPower, baseWeaponDurability, weaponPullCost, amountPulled)`:
+    - Randomly determines the rarity (e.g., Common, Epic) using a number between 1 and 4096.
+    - Multiplies weapon stats (`weaponPower`, `WeaponDurability`) based on the rarity tier.
+    - If the roll fails, refunds 25% of the pull cost.
+
+- Effects and Curses:
+  - `effectAndCurse(itemRarity, alwaysSpEffect, userLv, WeaponDurability, weaponPower, attackSpeed)`:
+    - Adds special effects (e.g., Burn, Poison) or curses (e.g., Brittleness, Madness).
+    - Effects are added if the item rarity is high or alwaysSpEffect is `true`.
+    - Curses are added randomly if conditions are met (e.g., higher-tier items).
+
+---
+
+### Weapon Generation
+- Weapon Rolling:
+  - `weaponRoll()`:
+    - Rolls a new weapon by:
+      1. Determining rarity using `rarity()`.
+      2. Assigning type using `weaponType()`.
+      3. Adding effects and curses using `effectAndCurse()`.
+    - Updates the player's inventory and DOM with the new weapon stats.
+    - Saves weapon data to cookies for persistence.
+
+---
+
+### Enemy Mechanics
+- Enemy Health:
+  - `EnemyHealth()`:
+    - Calculates enemy health as a random number scaled by player experience and level.
+
+- Enemy Race:
+  - `EnemyRace(EH)`:
+    - Randomly assigns an enemy race (e.g., Goblin, Dragon).
+    - Modifies stats like `EnemyHealth`, `EnemyAttack`, and `EnemySpeed` based on the race.
+    - Updates cookies with enemy data.
+
+- Enemy Initialization:
+  - `Enemy()`:
+    - Checks if the current enemy has zero health.
+    - Spawns a new enemy by calling `EnemyHealth()` and `EnemyRace()`.
+
+---
+
+### Combat and Player Interaction
+- Player Actions:
+  - `swingExp()`:
+    - Awards experience points based on weapon power divided by a constant (e.g., 100).
+  - `swingCoins()`:
+    - Awards gold based on weapon power divided by a constant.
+    - If the weapon is cursed (e.g., Money Eater), reduces gold gain by half.
+  - `swingDurabilityDamage()`:
+    - Reduces weapon durability after each swing based on a random damage value.
+
+- Effects and Curses in Combat:
+  - `curseAndEffectUse()`:
+    - Activates weapon effects (e.g., Burn, Poison) during combat:
+      1. For Burn: Reduces enemy health over 1 minute.
+      2. For Poison: Slowly reduces health over 3 minutes.
+    - Handles curses like reduced attack speed or durability.
+
+- Enemy Damage:
+  - `enemyHealthDamage(damageMultiplier)`:
+    - Reduces enemy health by weapon power multiplied by `damageMultiplier`.
+    - If the enemy dies, awards gold and randomly drops ores.
+
+- Enemy Attack:
+  - `enemyAttack()`:
+    - Reduces player health based on enemy attack power.
+    - Applies enemy-specific effects (e.g., Burn for Demons).
+
+- Turn Handling:
+  - `enemyTurn()`:
+    - Executes a single enemy turn and updates the game state.
+  - `enemyTurnIterative()`:
+    - Repeatedly executes enemy turns at intervals based on their speed.
+
+- Swing Mechanics:
+  - `swingPart1()`:
+    - Handles the first part of a swing:
+      1. Calls `Enemy()`, `swingExp()`, `swingCoins()`, `swingDurabilityDamage()`, and `curseAndEffectUse()`.
+  - `swingPart2(damageMultiplier)`:
+    - Completes the swing:
+      1. Applies damage using `enemyHealthDamage()`.
+      2. Sets a delay based on weapon speed for the next action.
+
+---
+
+### Player Stats
+- Health Management:
+  - `userHealth()`:
+    - Calculates player max health as `50 + (player level² × 50)`.
+    - Updates health in cookies for persistence.
+
+---
+
+### Weapon Management
+- Selling Weapons:
+  - `Sell()`:
+    - Sells the currently equipped weapon.
+    - Resets the player to "Fists" with minimal stats (1 power, 20 attack speed, etc.).
+
+---
+
+### Global Updates
+- Cookie Management:
+  - `allCookiesMake()`:
+    - Updates cookies with game state information:
+      1. Player stats (health, gold, level, experience).
+      2. Weapon stats (name, rarity, durability, effects).
+
+---
+
+### Testing/Debugging
+- Debugging Tools:
+  - High gold for testing:
+    - `userGoldid.innerHTML = 100000000000`
+  - Automated rolling:
+    - Loops weapon rolls until specific criteria are met using `weaponPick`.
+
