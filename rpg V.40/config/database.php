@@ -1,9 +1,11 @@
 <?php
 
-    define("DB_HOST","localhost");
-    define("DB_USER","root");
-    define("DB_PASS","");
-    define("DB_NAME","rpgclickerdb");
+    $dotenv = parse_ini_file('.env');
+
+    define("DB_HOST", $dotenv['DB_HOST']);
+    define("DB_USER", $dotenv['DB_USER']);
+    define("DB_PASS", $dotenv['DB_PASS']);
+    define("DB_NAME", $dotenv['DB_NAME']);
 
     $conn;
 
