@@ -1,4 +1,6 @@
 <?php
+    ob_start();
+
     include "inc/header.php";
 
     $pageLimit = 1;
@@ -198,4 +200,6 @@
 
 
 
-<?php include "inc/footer.php";?>
+<?php include "inc/footer.php";
+ob_end_flush();
+?>

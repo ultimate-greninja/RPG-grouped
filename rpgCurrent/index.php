@@ -318,7 +318,7 @@
     <button id = "armourRollButton" onclick= "weapon.weaponRoll()"  value="Armour roll (WIP)">Armour Roll</button><!--onclick= "armourRoll()"-->
   </div>
   <div id = "swing">
-    <button id = "swingButton" onclick= "game.swing()" value="Swing">Swing</button>
+    <button id = "swingButton" onclick= "game.swing()" value="Swing">Attack</button>
   </div>
   <div id = "sell">
     <button id = "sellButton" onclick= "weapon.Sell()" value="Sell">Sell</button>

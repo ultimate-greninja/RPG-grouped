@@ -2,7 +2,7 @@
         if (isset($_COOKIE["weaponInventoryPosition"])) {
             $weaponInventoryPosition = $_COOKIE["weaponInventoryPosition"];
             for ($i = 1; $i < 8; $i++) { 
-                if ($weaponInventoryPage == $i){
+                if ($weaponInventoryPosition == $i){// It was weaponInventoryPage, don't know why but if it's needed to change back it's here
                     $footerId = "position".$weaponInventoryPosition."Footer";
                 }
             }
