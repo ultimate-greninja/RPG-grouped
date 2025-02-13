@@ -20,7 +20,7 @@ body{
     bottom: 0%;
     
 }
-#town_img{
+#town_img,#forge_img{
     position: absolute;
     z-index: -1;
     left: 0%;

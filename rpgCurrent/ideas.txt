@@ -108,19 +108,25 @@ base armour durability = Math.ceil(Math.random()*10) + health / 10
 
 armour damage = 1/4 enemy attack(not reduced by armour)
 
-armour blocking capabitity;
-common = 1/12 of 10 * userLv
-uncommon = 2/12 of 10 * userLv
-rare = 3/12 of 10 * userLv
-epic = 4/12 of 10 * userLv
-legendary = 5/12 of 10 * userLv
-mythical = 6/12 of 10 * userLv
-cosmic = 7/12 of 10 * userLv
-universal = 8/12 of 10 * userLv
-divine = 9/12 of 10 * userLv
-celestial = 10/12 of 10 * userLv
-transendant = 11/12 of 10 * userLv
-reality = 12/12 of 10 * userLv
+armour blocking capabitity; (all rounded down)
+common = 1/12 of userHealth
+uncommon = 1/8 of userHealth
+rare = 2/12 of userHealth
+epic = 2/8 of userHealth
+legendary = 3/12 of userHealth
+mythical = 3/8 of userHealth
+cosmic = 4/12 of userHealth
+universal = 4/8 of userHealth
+divine = 5/12 of userHealth
+celestial = 5/8 of userHealth
+transendant = 6/12 of userHealth
+reality = 6/8 of userHealth
+
+armour types;
+no armour (for when not wearing any) - 0 blocked, chance to evade increased by 5%
+light armour - 1/2  damage blocked, no turn increase - 33% 
+medium armour - normal damage blocked, +1 turn before attack available, 5% less chance to evade - 33%
+heavy armour - 2* damage blocked, +2 turn before attack available, 10% less chance to evade - 33%
 
 repair
 health left on weapon / armour (% carries bellow until another percentage or 0)
@@ -206,6 +212,20 @@ can try and forge with 100 of a material
 
 forge
 when forge the items used to for is the rarity
+upgrade forge {
+    increase chance of rarer ores being successful with less
+    unlocks upgrade weapon (lv.3 forge)
+    unlocks enchanter (lv.10 forge)
+    maybe more???
+
+    money needed to lv.up{
+        lv.1 = free (base one)
+        lv.2 = 250g
+        lv.3 = 500g
+        lv.4 = 750g
+        +250 each
+        }
+    }
 
 +0.1% per forge success
 +0.01% per forge fail

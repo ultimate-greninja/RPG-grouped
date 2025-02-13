@@ -1,15 +1,18 @@
 <?php
+        $footerId = "basicFooter";
         if (isset($_COOKIE["weaponInventoryPosition"])) {
+            echo "cookie is here";
             $weaponInventoryPosition = $_COOKIE["weaponInventoryPosition"];
             for ($i = 1; $i < 8; $i++) { 
                 if ($weaponInventoryPosition == $i){// It was weaponInventoryPage, don't know why but if it's needed to change back it's here
                     $footerId = "position".$weaponInventoryPosition."Footer";
                 }
+                if ($i == 7){
+                    setcookie("weaponInventoryPosition","",time()-86400000);
+                }
             }
         }
-        else{
-            $footerId = "basicFooter";
-        }
+
 ?>
     <footer class = "bg-dark" id = "<?php echo $footerId?>">
         <div id = "footer_text">

@@ -200,6 +200,10 @@
 
 
 
-<?php include "inc/footer.php";
+<?php 
+if (!isset($_COOKIE["weaponInventoryPosition"])) {
+    echo "<script>location.reload()</script>";
+}
+include "inc/footer.php";
 ob_end_flush();
 ?>

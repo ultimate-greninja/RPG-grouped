@@ -24,6 +24,7 @@ if (!isset($_COOKIE[$cookieName]) || empty($_COOKIE[$cookieName])) {
   setCookie("enemyHealth","",time()-86400000);
   setCookie("enemyAttack","",time()-86400000);
   setCookie("enemyAttackSpeed","",time()-86400000);
+  setcookie("weaponInventoryPosition","",time()-86400000);
   header("location:titleScreen.php");
 }
 $userId = $_COOKIE["userId"];
