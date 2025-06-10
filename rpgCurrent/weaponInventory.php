@@ -9,9 +9,9 @@
     if (!isset($_GET['next']) && !isset($_GET['back'])) {
         $page = 1;
     } else if (isset($_GET['next'])) {
-        $page = $_GET['page'];  // Increment the page number
+        $page = intval($_GET['page']) + 1;  // Increment the page number
     } else if (isset($_GET['back'])) {
-        $page = max(1, $_GET['page']);  // Decrement and ensure it doesn't go below 1
+        $page = max(1, intval($_GET['page']) - 1);  // Decrement and ensure it doesn't go below 1
     }
 
     if (isset($_GET['next']) || isset($_GET['back'])){

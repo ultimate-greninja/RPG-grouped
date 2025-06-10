@@ -316,10 +316,10 @@ class Enemy{
         let enemyHealth = parseInt(enemyHealthid.innerHTML)
     
         if (E == "Healer"){
-            Heal = WP * damageMultiplier
+            let Heal = WP * damageMultiplier
             userHealth = userHealth + Heal
             if (userHealth <= maxUserHealth){
-                UserHealthid.innerHTML = maxUserHealth
+                userHealthid.innerHTML = maxUserHealth
             }
             else{
                 userHealthid.innerHTML = userHealth
@@ -348,9 +348,7 @@ class Enemy{
             console.log(this.corpseGold,maxEnemyHealth)
             userGold = parseInt(userGold) + parseInt(this.corpseGold)
             userGoldid.innerHTML = userGold 
-    
-            chance = Math.floor(Math.random()*8192)+1
-            //waypoint\\
+            let chance = Math.floor(Math.random() * 8192) + 1;
             if (chance <= 2048){
                 setCookie("ore","ironite",1)
             }
@@ -358,7 +356,7 @@ class Enemy{
                 setCookie("ore","steelite",1)
             }
             else if (chance <= 3584){
-                setCookie("ore","siverium",1)
+                setCookie("ore","silverium",1)
             }
             else if (chance <= 3840){
                 setCookie("ore","goldforge",1)

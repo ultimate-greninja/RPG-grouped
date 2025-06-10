@@ -36,10 +36,9 @@ $user = mysqli_fetch_assoc($currentUser);
 
 $gender = $user["gender"];
 
-if (isset($COOKIE["gold"])){
+if (isset($_COOKIE["gold"])) {  // Corrected $COOKIE to $_COOKIE
   $coin = $_COOKIE["gold"];
-}
-else{
+} else {
   $coin = $user["gold"];
 }
 ?>

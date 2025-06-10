@@ -11,13 +11,13 @@
             while ($row = mysqli_fetch_assoc($result)) {
                 
                 $passHash = $row["passwordText"]; // database should be big enough to hold it for this to work
-                if (password_verify("$pass","$passHash")) { // password_verify issue
+                if (password_verify($pass, $passHash)) {  // Corrected password_verify usage
                     $userId = $row["userId"];
-                    $passVerify = password_verify("$pass","$passHash");
                     echo "password correct";
                     $fail = false;
                     setcookie("userId", $userId, time() + (86400 * 30), "/"); // 86400 = 1 day
                     header("location:index.php");
+                    exit;  // Ensure no further code is executed
                 }
                 else{
                     setcookie("passwordIncorrect","", time() + (86400 * 30), "/"); // 86400 = 1 day
