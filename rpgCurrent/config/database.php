@@ -1,6 +1,6 @@
 <?php
 
-    $dotenv = parse_ini_file('C:\Users\thoma\files\coding\projects\RPG grouped\rpgCurrent\config\database.env');
+    $dotenv = parse_ini_file('C:\Users\thoma\files\coding\projects\main projects\RPG grouped\rpgCurrent\config\database.env');
 
     define("DB_HOST", $dotenv['DB_HOST']);
     define("DB_USER", $dotenv['DB_USER']);
