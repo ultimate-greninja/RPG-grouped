@@ -7,7 +7,7 @@
     define("DB_PASS", $dotenv['DB_PASS']);
     define("DB_NAME", $dotenv['DB_NAME']);
 
-    $conn;
+    $conn = null;
 
     try {
         $conn = mysqli_connect(DB_HOST,DB_USER,DB_PASS,DB_NAME);
